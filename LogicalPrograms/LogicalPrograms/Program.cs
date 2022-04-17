@@ -1,7 +1,7 @@
 ﻿using LogicalPrograms;
 Console.WriteLine("Hello welcome to my program");
 bool end = true;
-Console.WriteLine("1.Fibonacci Series\n2.Perfect Number");
+Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number");
 while (end)
 {
     Console.WriteLine("Choose an option");
@@ -17,6 +17,10 @@ while (end)
             number.Number();
             break;
         case 3:
+            PrimeNumber number1 = new PrimeNumber();
+            number1.Prime();
+            break;
+        case 4:
             Console.WriteLine("Enter a valid choice");
             end = false;
             break;
