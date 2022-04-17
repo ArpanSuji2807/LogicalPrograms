@@ -1,7 +1,7 @@
 ﻿using LogicalPrograms;
 Console.WriteLine("Hello welcome to my program");
 bool end = true;
-Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Palindrome number\n5.Day Of week");
+Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Palindrome number\n5.Day Of week\n6. Tempearture connversion");
 while (end)
 {
     Console.WriteLine("Choose an option");
@@ -29,6 +29,10 @@ while (end)
             number3.Day();
             break;
         case 6:
+            TemperatureConversion conversion = new TemperatureConversion();
+            conversion.Conversion();
+            break;
+        case 7:
             Console.WriteLine("Enter a valid choice");
             end = false;
             break;
