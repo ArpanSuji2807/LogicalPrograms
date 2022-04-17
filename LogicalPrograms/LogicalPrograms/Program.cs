@@ -1,7 +1,7 @@
 ﻿using LogicalPrograms;
 Console.WriteLine("Hello welcome to my program");
 bool end = true;
-Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Palindrome number");
+Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Palindrome number\n5.Day Of week");
 while (end)
 {
     Console.WriteLine("Choose an option");
@@ -25,6 +25,10 @@ while (end)
             number2.Palindrome();
             break;
         case 5:
+            WeekDays number3 = new WeekDays();
+            number3.Day();
+            break;
+        case 6:
             Console.WriteLine("Enter a valid choice");
             end = false;
             break;
