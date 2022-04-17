@@ -1,7 +1,7 @@
 ﻿using LogicalPrograms;
 Console.WriteLine("Hello welcome to my program");
 bool end = true;
-Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number");
+Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Palindrome number");
 while (end)
 {
     Console.WriteLine("Choose an option");
@@ -21,6 +21,10 @@ while (end)
             number1.Prime();
             break;
         case 4:
+            ReverseNumber number2 = new ReverseNumber();
+            number2.Palindrome();
+            break;
+        case 5:
             Console.WriteLine("Enter a valid choice");
             end = false;
             break;
