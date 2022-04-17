@@ -1,7 +1,7 @@
 ﻿using LogicalPrograms;
 Console.WriteLine("Hello welcome to my program");
 bool end = true;
-Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Palindrome number\n5.Day Of week\n6. Tempearture connversion");
+Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Palindrome number\n5.Day Of week\n6. Tempearture connversion\n7.Monthly payment");
 while (end)
 {
     Console.WriteLine("Choose an option");
@@ -33,6 +33,10 @@ while (end)
             conversion.Conversion();
             break;
         case 7:
+            MonthlyPayment payment = new MonthlyPayment();
+            payment.Payment();
+            break;
+        case 8:
             Console.WriteLine("Enter a valid choice");
             end = false;
             break;
